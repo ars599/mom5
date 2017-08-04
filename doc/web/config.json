@@ -1,0 +1,23 @@
+{
+    "project_heading": "Modular Ocean Model (MOM)",
+    "project_title": "MOM",
+    "tags": [{"tag": "5.0.2", "commit": "8e524daedf27c1aaa35b4069efb38abc7575b4b5"},
+             {"tag": "5.0.1", "commit": "2534bdc3b4bce6d08424174abda7b1ab6be0c29d"},
+             {"tag": "5.0.1-beta0", "commit": "09cae4e1bd838efcb862d45bfc61ff074f849f9b"},
+             {"tag": "5.0.0", "commit": "305729e4f67c239802d38eb2446c3cee8fc5276a"},
+             {"tag": "5.0.0-beta0", "commit": "7ffd65ae4dd6a4a6c06ebff910326c1bc35c8f01"}
+             ],
+    "project_desc": "MOM is a numerical ocean model based on the hydrostatic primitive equations. MOM development is funded by <a href=\"http://www.noaa.gov\">NOAA</a> and led by scientists at <a href=\"http://www.gfdl.noaa.gov/ocean-model\">NOAA/GFDL</a> in collaboration with scientists worldwide. Version 5 of MOM (MOM5) is an open source project released under the <a href=\"https://github.com/BreakawayLabs/mom/blob/master/LICENSE\">GPL license</a>.",
+    "project_about": "The Modular Ocean Model (MOM) is a hydrostatic generalized level coordinate numerical ocean code with mass conserving non-Boussinesq or volume conserving Boussinesq kinematics. The model equations are discretized with generalized horizontal coordinates on the sphere using either an Arakawa B-grid or C-grid. MOM has a broad suite of physical parameterizations, diagnostic features, test cases, and documentation. It has been utilized for research and operations from the coasts to the globe. MOM is institutionally sanctioned by NOAA’s Geophysical Fluid Dynamics Laboratory (GFDL), where development is centered. Additional development and use occurs through hundreds of international scientists and engineers comprising the MOM community. MOM is free software distributed under GPLv2 and it is part of an open source community.",
+    "google_groups": "mom-users",
+    "docs": [{"file": "quickstart", "title": "Quickstart"},
+    	     {"file": "user_guide", "title": "User Guide"}],
+    "pdfs": [{"file": "MOM5_elements", "title": "Elements of MOM 5"},
+             {"file": "MOM4_guide", "title": "MOM 4 Technical Guide"},
+             {"file": "testcase_atl_regional", "title": "Test Case: Atlantic"},
+             {"file": "testcase_baltic", "title": "Test Case: Baltic"},
+             {"file": "testcase_ICCM", "title": "Test Case: ICCM"},
+             {"file": "testcase_ocean_cpld", "title": "Test Case: Coupled Ocean"},
+             {"file": "testcase_ocean_solo", "title": "Test Case: Solo Ocean"}
+	     ]
+}
