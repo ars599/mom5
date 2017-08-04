@@ -424,6 +424,11 @@ program main
 
      call external_coupler_sbc_before(Ice_ocean_boundary, Ocean_sfc, nc, dt_cpld )
 
+!dhb599s 20170710: coupling/forcing data should be available before "update_ocean_model" !
+!       so call external_coupler_sbc_after here (for from_coupler):
+!     call external_coupler_sbc_after(Ice_ocean_boundary, Ocean_sfc, nc, dt_cpld)
+!dhb599e. 
+
 #ifdef ACCESS
      do_sfix_now = .false.
      !write(stdoutunit,*) 'XXX: in ocean_solo, dt_cpld = ', dt_cpld
@@ -448,7 +453,12 @@ program main
         call ocean_solo_restart(Time, Time_restart_current, timestamp)
      end if
 
+!dhb599s: see above comment. 
      call external_coupler_sbc_after(Ice_ocean_boundary, Ocean_sfc, nc, dt_cpld )
+!
+!       shouldn't "external_coupler_sbc_before" be called here (for into_coupler)? 
+!       need to watch deadlock...... 
+!dhb599e
 
   enddo
 
