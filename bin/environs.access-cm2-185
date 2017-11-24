@@ -15,5 +15,5 @@ module load netcdf/4.3.2
 #setenv OASIS_ROOT /short/p66/hxy599/ACCESS/submodels/oasis3-mct_local/Linux-185
 setenv OASIS_ROOT .
 module use ~access/modules
-module load oasis3-mct/ompi185
+module load oasis3-mct-local/ompi185
 
